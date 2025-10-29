@@ -8,7 +8,7 @@
 
 ## 🔗 Cross-Framework Links
 
-* [React Version README → *(Coming Soon)*](#)
+* [React Version README → *(Coming Soon)*](README.md)
 * [Twig Version README → *(Coming Soon)*](#)
 
 ---
