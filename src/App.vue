@@ -1,26 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="layout">
+    <component :is="navToUse" />
+    <main class="page"><router-view /></main>
+    <AppFooter />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBarPublic from './components/NavBarPublic.vue';
+import NavBarApp from './components/NavBarApp.vue';
+import AppFooter from './components/AppFooter.vue';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  components: { NavBarPublic, NavBarApp, AppFooter },
+  computed: {
+    navToUse() {
+      return this.$route.meta.layout === 'app' ? 'NavBarApp' : 'NavBarPublic';
+    },
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+html, body, #app { height: 100%; }
+.layout { min-height: 100%; display: flex; flex-direction: column; }
+.page { flex: 1 0 auto; }
 </style>
