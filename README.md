@@ -9,7 +9,7 @@
 ## 🔗 Cross-Framework Links
 
 * [React Version README → ](https://github.com/Holupeter/React-ticketapp/blob/main/README.md)
-* [Twig Version README → *(Coming Soon)*](#)
+* [Twig Version README → ](https://github.com/Holupeter/ticketapp-twig/blob/main/README.md)
 
 ---
 
