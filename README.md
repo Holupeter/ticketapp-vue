@@ -305,7 +305,8 @@ Protected routes check for a valid session key (`ticketapp_session`).
 ## 📎 License
 
 **MIT License**
-© 2025 — *Your Name or Organization*
+© 2025 — *Holupeter* 
+
 
 ---
 
